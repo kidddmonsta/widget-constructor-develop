@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Конструктор виджетов</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write(decodeURIComponent('%3Cscript src="js/jquery.min.js"%3E%3C/script%3E'))</script>
+    <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/19.2.7/css/dx.common.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/19.2.7/css/dx.light.css"/>
+    <script src="https://cdn3.devexpress.com/jslib/19.2.7/js/dx.all.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <script src="https://cdn3.devexpress.com/jslib/19.2.7/js/localization/dx.messages.ru.js"></script>
+    <script src="localization.js"></script>
+    <script src="../../assets/config.js"></script>
+    <!--<script src="../assets/widgetRender.js"></script>-->
+    <script src="index.js"></script>
+
+</head>
+<body class="dx-viewport">
+<div class="container">
+    <div id="form">
+        <div class="dx-fieldset">
+
+            <div class="dx-field">
+                <h3>Общая информация</h3>
+                <div class="dx-field-label">Название</div>
+                <div class="dx-field-value">
+                    <div id="widget-name"></div>
+                </div>
+            </div>
+
+            <div class="dx-field">
+                <div class="dx-field-label">Описание</div>
+                <div class="dx-field-value">
+                    <div id="widget-text"></div>
+                </div>
+            </div>
+
+            <div class="dx-field">
+                <h3>Данные</h3>
+                <div class="dx-field-label">Выберите аналитический запрос:</div>
+                <div class="dx-field-value">
+                    <div id="analyt-query-select"></div>
+                </div>
+            </div>
+
+            <div class="dx-field measures" style="display: none;">
+                <div class="dx-field-label">Факты</div>
+                <div class="dx-field-value">
+                    <div id="measures"></div>
+                </div>
+            </div>
+
+            <div class="dx-field dimensions" style="display: none;">
+                <div class="dx-field-label">Измерения</div>
+                <div class="dx-field-value">
+                    <div id="dimensions"></div>
+                </div>
+            </div>
+
+            <div class="dx-field select-type" style="display: none;">
+                <h3>Визуализация</h3>
+                <div class="dx-field-label">Тип компонента визуализации</div>
+                <div class="dx-field-value">
+                    <div id="select-type"></div>
+                </div>
+            </div>
+
+            <div class="dx-field select-provider" style="display: none;">
+                <div class="dx-field-label">Бренд компонента визуализации</div>
+                <div class="dx-field-value">
+                    <div id="select-provider"></div>
+                </div>
+            </div>
+
+            <div class="dx-field use-default-settings" style="display: none;">
+                <div class="dx-field-label">Использовать стандартные настройки</div>
+                <div class="dx-field-value">
+                    <div id="use-default-settings"></div>
+                </div>
+            </div>
+
+            <div class="dx-field chart-settings-form" style="display: none;">
+                <h3>Настройки отображения</h3>
+                <div id="chart-settings-form"></div>
+            </div>
+
+            <div id="button"></div>
+            <div id="frameResult"></div>
+            <div id="widgetCreateResult"></div>
+            <div style="display: none;" id="get-analyt-query"></div>
+            <div id="popup"></div>
+
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
